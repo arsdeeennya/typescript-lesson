@@ -5,12 +5,17 @@
 // }
 // another.anotherGreeting();
 
+// クラスを作るということはオブジェクトとして鋳型を作る以外に、インスタンスを表す型を同時に作っております
+
+
 abstract class Person {
   static species = 'Homo sapiens';
   static isAdult(age: number) {
     if (age > 17) return true;
     return false;
   }
+
+  // フィールドを上に書かずに、コンストラクタの引数に入れるだけでOK
   constructor(readonly name: string, protected age: number) {
   }
   incrementAge() {
