@@ -1,3 +1,10 @@
+// クラスの中のthisは「そのインスタンスの」を意味するが、クラス外のオブジェクトで呼び出すと「そのオブジェクトの」を意味する
+// const another ={
+//   name:'another',
+//   anotherGreeting: quill.greeting
+// }
+// another.anotherGreeting();
+
 abstract class Person {
   static species = 'Homo sapiens';
   static isAdult(age: number) {
